@@ -14,10 +14,10 @@ My personal starting point for any laravel app that requires authentification.
 
 ### Env setup & Laravel deployment
 
-1. `composer install`
-2. clone the repo and cd into it
-3. configs in `app\config\**.php` (database, keys, keywords, local...)
-4. setup your local machine name `boostrap/start.php` : `$env = $app->detectEnvironment`
+1. clone the repo and cd into it
+2. `composer install`
+3. setup your local machine name `boostrap/start.php` : `$env = $app->detectEnvironment`
+4. configs in `app\config\**.php` (database, keys, keywords, local...)
 
 ### Database installation
 
@@ -25,7 +25,7 @@ My personal starting point for any laravel app that requires authentification.
 2. `php artisan db:seed`
 
 
-# Users accounts
+# User accounts
 
 ### Standard account
 
