@@ -1,8 +1,7 @@
 # WIP
 
 
-# Laravel 4 Basic Bootstrap Authentication
-## with Sentry and OAuth
+# Laravel 4 Basic Authentication
 
 My personal starting point for any laravel app that requires authentification.
 
