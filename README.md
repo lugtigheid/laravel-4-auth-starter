@@ -1,7 +1,8 @@
 # WIP
 
 
-# Laravel 4 Basic Bootstrap Authentication with Sentry and OAuth
+# Laravel 4 Basic Bootstrap Authentication
+## with Sentry and OAuth
 
 My personal starting point for any laravel app that requires authentification.
 
@@ -33,7 +34,7 @@ My personal starting point for any laravel app that requires authentification.
 
 ### Launch locally
 
-1 `php artisan serve`
+1. `php artisan serve`
 2. Visit [localhost:8000](http://localhost:8000) in your browser
 
 
