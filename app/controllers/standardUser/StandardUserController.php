@@ -2,13 +2,6 @@
 
 class StandardUserController extends \BaseController {
 
-
-
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
 	public function getHome()
 	{
 		return View::make('protected.standardUser.user_dashboard');
@@ -18,7 +11,5 @@ class StandardUserController extends \BaseController {
 	{
 		return View::make('protected.standardUser.user_page_1');
 	}
-
-
-
+	
 }

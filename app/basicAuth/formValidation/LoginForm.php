@@ -9,5 +9,3 @@ class LoginForm extends FormValidator {
 		'password' => 'required',
 	];
 }
-
-

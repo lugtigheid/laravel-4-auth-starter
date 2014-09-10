@@ -65,7 +65,7 @@
 				    </div>
 				</div>
 
-				<p style="text-align:center">Already have an account? <a href="/login">Login</a></p>
+				<p style="text-align:center">Already have an account? <a href="{{ URL::to('login') }}">Login</a></p>
 
 			</div>
 		</div>

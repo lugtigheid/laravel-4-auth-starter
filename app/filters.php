@@ -35,7 +35,11 @@ App::after(function($request, $response)
 
 Route::filter('auth', function()
 {
-	if (!Sentry::check()) return Redirect::guest('login');
+	if (!Sentry::check())
+	{
+		if (Request::ajax()) return Response::make('Unauthorized', 401);
+		else return Redirect::guest('login');
+	}
 });
 
 // Route::filter('auth', function()
@@ -140,7 +144,9 @@ Route::filter('currentUser', function($route)
 
 Route::filter('csrf', function()
 {
-	if (Session::token() != Input::get('_token'))
+	$token = Request::ajax() ? Request::header('x-csrf-token') : Input::get('_token');
+
+	if (Session::token() != $token)
 	{
 		throw new Illuminate\Session\TokenMismatchException;
 	}

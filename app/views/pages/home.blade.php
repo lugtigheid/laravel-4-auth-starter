@@ -11,7 +11,7 @@
 
 		@if (!Sentry::check())
 		<p>
-			<a href="/login" class="btn btn-success btn-lg" role="button">Login</a> or <a href="/register" class="btn btn-primary btn-lg" role="button">Register</a>
+			<a href="{{ URL::to('login') }}" class="btn btn-success btn-lg" role="button">Login</a> or <a href="{{ URL::to('register') }}" class="btn btn-primary btn-lg" role="button">Register</a>
 		</p>
 		@endif
 	</div>

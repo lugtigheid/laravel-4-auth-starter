@@ -53,7 +53,7 @@
 				    </div>
 				</div>
 				<div style="text-align:center">
-					<p><a href="/forgot_password">Forgot Password?</a></p>
+					<p><a href="{{ URL::to('forgot_password') }}">Forgot Password?</a></p>
 
 					<p><strong>Standard User:</strong> user@user.com<br>
 					<strong>Standard User Password:</strong> sentryuser</p>

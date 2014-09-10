@@ -8,5 +8,3 @@ class ForgotPasswordForm extends FormValidator {
 		'email' => 'required|email',
 	];
 }
-
-

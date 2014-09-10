@@ -58,7 +58,8 @@ App::error(function(Laracasts\Validation\FormValidationException $exception, $co
 
 App::missing(function($exception)
 {
-    return Response::view('404', array(), 404);
+	// shows an error page (app/views/errors/missing.blade.php)
+	return Response::view('errors.missing', array('title_for_layout' => 'Error'), 404);
 });
 
 App::error(function(Illuminate\Database\Eloquent\ModelNotFoundException $exception, $code)

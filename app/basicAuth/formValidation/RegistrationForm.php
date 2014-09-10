@@ -11,5 +11,3 @@ class RegistrationForm extends FormValidator {
 		'last_name' => 'required',
 	];
 }
-
-

@@ -2,7 +2,6 @@
 
 class PagesController extends \BaseController {
 
-
 	public function getHome()
 	{
 		return View::make('pages.home');
@@ -17,6 +16,5 @@ class PagesController extends \BaseController {
 	{
 		return View::make('pages.contact');
 	}
-
 
 }

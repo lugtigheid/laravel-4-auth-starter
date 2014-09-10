@@ -33,28 +33,25 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="/">Basic Auth Sentry</a>
+		      <a class="navbar-brand" href="{{ URL::to('/') }}">Basic Auth Sentry</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li class="{{ set_active_admin('admin') }}"><a href="/">Home</a></li>
-  		        <li class="{{ set_active_admin('admin/profiles') }}"><a href="/admin/profiles">List Users</a></li>
+		        <li class="{{ set_active_admin('admin') }}"><a href="{{ URL::to('/') }}">Home</a></li>
+  		        <li class="{{ set_active_admin('admin/profiles') }}"><a href="{{ URL::to('admin/profiles') }}">List Users</a></li>
 		        
 
 		      </ul>
 
 		      <ul class="nav navbar-nav navbar-right">
 
-		        <li><a href="/logout">Logout</a></li>
+		        <li><a href="{{ URL::to('logout') }}">Logout</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-
-
-
 
 	</header>
 
