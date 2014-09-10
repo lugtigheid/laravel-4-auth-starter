@@ -12,37 +12,27 @@ My personal starting point for any laravel app that requires authentification.
 
 # Local Installation
 
-### Env setup
-
-1. install composer : https://getcomposer.org
-2. clone the repo and cd into it
-3. Setup your local machine name `boostrap/start.php` : `$env = $app->detectEnvironment`
-
-### Laravel vendors installation
+### Env setup & Laravel deployment
 
 1. `composer install`
-
-### App configuration
-
-1. configs in `app\config\**.php` (database, keys, keywords, local...)
+2. clone the repo and cd into it
+3. configs in `app\config\**.php` (database, keys, keywords, local...)
+4. setup your local machine name `boostrap/start.php` : `$env = $app->detectEnvironment`
 
 ### Database installation
 
 1. `php artisan migrate`
 2. `php artisan db:seed`
 
-### Launch locally
 
-1. `php artisan serve`
-2. Visit [localhost:8000](http://localhost:8000) in your browser
+# Users accounts
 
-
-#Standard account
+### Standard account
 
 - **Username :** user@user.com
 - **Password :** sentryuser
 
-#Admin account
+### Admin account
 
 - **Username :** admin@admin.com
 - **Password :** sentryadmin
