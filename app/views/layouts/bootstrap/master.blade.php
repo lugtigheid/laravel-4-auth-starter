@@ -33,7 +33,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="{{ URL::to('/') }}">Basic Auth Sentry</a>
+		      <a class="navbar-brand" href="{{ URL::to('/') }}">L4 Auth Starter</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->

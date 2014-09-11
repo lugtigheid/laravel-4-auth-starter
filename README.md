@@ -1,6 +1,5 @@
 # WIP :: TODO
 
-- Basic users management
 - OAuth implementation
 - Basic facebook login
 - Internationalization
@@ -16,6 +15,7 @@ My personal starting point for any laravel app that requires authentification.
 
 - **Users Auth:** Login / Registration / Password reminder / Profil edition
 - **Users Permissions:** Users groups (standard / admin) / Permissions
+- **Users Management:** Profil edition / Ban or unban user / Delete user
 - **Basic Layouts:** Bootstrap 3
 
 ### Libraries
@@ -38,7 +38,6 @@ My personal starting point for any laravel app that requires authentification.
 
 1. `php artisan migrate`
 2. `php artisan db:seed`
-
 
 # User accounts
 

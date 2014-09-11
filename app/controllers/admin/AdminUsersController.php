@@ -32,6 +32,22 @@ class AdminUsersController extends \BaseController {
 		return View::make('protected.admin.show_user')->withUser($user)->withUserGroup($user_group);
 	}
 
+	public function ban($id)
+	{
+		$throttle = Sentry::findThrottlerByUserId($id);
+		$throttle->ban();
+
+		return Redirect::route('admin.profiles.index')->withFlashMessage('User has been banned successfully!');
+	}
+
+	public function unban($id)
+	{
+		$throttle = Sentry::findThrottlerByUserId($id);
+		$throttle->unBan();
+
+		return Redirect::route('admin.profiles.index')->withFlashMessage('User has been unbanned successfully!');
+	}
+
 	public function edit($id)
 	{
 		$user = $this->user->find($id);
@@ -73,7 +89,9 @@ class AdminUsersController extends \BaseController {
 
 	public function destroy($id)
 	{
-		//
+		$user = $this->user->find($id);
+		$user->delete();
+		return Redirect::route('admin.profiles.index')->withFlashMessage('User has been deleted successfully!');
 	}
 
 }

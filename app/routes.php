@@ -47,6 +47,8 @@ Route::group(['before' => 'auth|admin'], function()
 {
 	Route::get('/admin', ['as' => 'admin_dashboard', 'uses' => 'AdminController@getHome']);
     Route::resource('admin/profiles', 'AdminUsersController', ['only' => ['index', 'show', 'edit', 'update', 'destroy']]);
+    Route::get('/admin/profiles/ban/{id}', ['as' => 'admin.profiles.ban', 'uses' => 'AdminUsersController@ban']);
+    Route::get('/admin/profiles/unban/{id}', ['as' => 'admin.profiles.unban', 'uses' => 'AdminUsersController@unban']);
 });
 
 

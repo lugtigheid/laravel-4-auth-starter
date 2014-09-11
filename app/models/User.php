@@ -49,4 +49,12 @@ class User extends Cartalyst\Sentry\Users\Eloquent\User implements UserInterface
         return Sentry::getUser()->id == $this->id;
     }
 
+    public function isBanned()
+    {
+    	$throttle = Sentry::findThrottlerByUserId($this->id);
+    	
+        if ($banned = $throttle->isBanned()) return true;
+        return false;
+    }
+
 }
