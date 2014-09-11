@@ -5,10 +5,10 @@
 
 My personal starting point for any laravel app that requires authentification.
 
-- Laravel 4.2.*
-- Sentry 2.1.*
-- Bootstrap 3.1.1
-
+- **Core:** laravel/framework 4.2.*
+- **Authentication:** cartalyst/sentry 2.1.*
+- **Tools:** laracasts/validation 1.0, way/generators 2.*
+- **Templating:** Bootstrap 3.1.1
 
 # Local Installation
 
