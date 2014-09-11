@@ -16,7 +16,7 @@ My personal starting point for any laravel app that requires authentification.
 - **Users Auth:** Login / Registration / Password reminder / Profil edition
 - **Users Permissions:** Users groups (standard / admin) / Permissions
 - **Users Management:** Profil edition / Ban or unban user / Delete user
-- **Basic Layouts:** Bootstrap 3
+- **Basic Layout:** Bootstrap 3
 
 ### Libraries
 
