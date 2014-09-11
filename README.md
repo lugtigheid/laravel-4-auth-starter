@@ -1,6 +1,5 @@
 # WIP :: TODO
 
-- Sentry throttling features
 - Basic users management
 - OAuth implementation
 - Basic facebook login

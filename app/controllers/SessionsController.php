@@ -26,11 +26,19 @@ class SessionsController extends \BaseController {
 		}
 		catch (\Cartalyst\Sentry\Users\UserNotFoundException $e)
 		{
-		   	return Redirect::back()->withInput()->withErrorMessage('Invalid credentials provided');
+		   	return Redirect::back()->withInput()->withErrorMessage('Invalid credentials provided.');
 		}
 		catch (\Cartalyst\Sentry\Users\UserNotActivatedException $e)
 		{
 		   	return Redirect::back()->withInput()->withErrorMessage('User Not Activated.');
+		}
+		catch (\Cartalyst\Sentry\Throttling\UserSuspendedException $e)
+		{
+		   	return Redirect::back()->withInput()->withErrorMessage('Too many login attempts, please try again later.');
+		}
+		catch (\Cartalyst\Sentry\Throttling\UserBannedException $e)
+		{
+			return Redirect::back()->withInput()->withErrorMessage('User banned.');
 		}
 
 		// Logged in successfully - redirect based on type of user
