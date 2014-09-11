@@ -1,4 +1,12 @@
-# WIP
+# WIP :: TODO
+
+- Sentry throttling features
+- Basic users management
+- OAuth implementation
+- Basic facebook login
+- Internationalization
+
+---
 
 
 # Laravel 4 Basic Authentication
