@@ -1,4 +1,4 @@
-@extends('protected.admin.master')
+@extends('layouts.bootstrap.admin')
 
 @section('title', 'View Profile')
 

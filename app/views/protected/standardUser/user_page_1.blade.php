@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.bootstrap.master')
 
 @section('title', 'Registered Users')
 
