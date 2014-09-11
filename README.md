@@ -9,7 +9,7 @@
 ---
 
 
-# Laravel 4 Authentication Starter
+# Laravel 4.2 Authentication Starter
 
 My personal starting point for any laravel app that requires authentification.
 
