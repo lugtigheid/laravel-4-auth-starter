@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'test@test.com', 'name' => 'Andre Madarang'),
+	'from' => array('address' => 'no-reply@yourwebsite.com', 'name' => 'Your website'),
 
 	/*
 	|--------------------------------------------------------------------------
