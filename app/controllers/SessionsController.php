@@ -8,6 +8,8 @@ class SessionsController extends \BaseController {
 
 	function __construct(LoginForm $loginForm)
 	{
+		parent::__construct();
+		
 		$this->loginForm = $loginForm;
 	}
 

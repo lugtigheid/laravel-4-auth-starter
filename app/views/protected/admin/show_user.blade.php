@@ -1,4 +1,4 @@
-@extends('layouts.bootstrap.admin')
+@extends($adminLayout)
 
 @section('title', 'View Profile')
 

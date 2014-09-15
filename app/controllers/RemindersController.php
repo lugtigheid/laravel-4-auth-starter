@@ -8,6 +8,8 @@ class RemindersController extends Controller {
 
 	function __construct(ForgotPasswordForm $forgotPasswordForm)
 	{
+		parent::__construct();
+		
 		$this->forgotPasswordForm = $forgotPasswordForm;
 	}
 

@@ -10,6 +10,8 @@ class AdminUsersController extends \BaseController {
 
 	function __construct(UserRepositoryInterface $user, AdminUsersEditForm $adminUsersEditForm)
 	{
+		parent::__construct();
+		
 		$this->user = $user;
 		$this->adminUsersEditForm = $adminUsersEditForm;
 

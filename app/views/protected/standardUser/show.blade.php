@@ -1,4 +1,4 @@
-@extends('layouts.bootstrap.master')
+@extends($masterLayout)
 
 @section('title', 'View Profile')
 

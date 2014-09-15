@@ -10,6 +10,8 @@ class RegistrationController extends \BaseController {
 
 	function __construct(UserRepositoryInterface $user, RegistrationForm $registrationForm)
 	{
+		parent::__construct();
+		
 		$this->user = $user;
 		$this->registrationForm = $registrationForm;
 	}
