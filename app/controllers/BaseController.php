@@ -7,9 +7,9 @@ class BaseController extends Controller {
 	public function __construct()
     {
         $this->beforeFilter(function(){
-            $this->layoutsOpt['masterLayout']  = 'layouts.frontend.master';
-			$this->layoutsOpt['adminLayout']   = 'layouts.backend.admin';
-			$this->layoutsOpt['missingLayout'] = 'layouts.frontend.master';
+            $this->layoutsOpt['masterLayout']  = 'layouts.bootstrap.master';
+			$this->layoutsOpt['adminLayout']   = 'layouts.bootstrap.admin';
+			$this->layoutsOpt['missingLayout'] = 'layouts.bootstrap.master';
         });
     }
 
